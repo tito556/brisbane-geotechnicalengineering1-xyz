@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -186,7 +222,7 @@ header.hero, .hero { position: relative !important; }
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <p>AS 1289.5.3.1 — Determination of field density and moisture content using the sand replacement method, AS 1289.5.4.1 — Compaction control test (Hilf method), TMR Q142 — Queensland Department of Transport and Main Roads field density test procedure</p></section>
 
-<section class="section"><h2>Quick answers</h2><details><summary>What is the sand cone method used for in Brisbane?</summary><p>It measures the in-situ dry density and moisture content of compacted soil, verifying that earthworks meet the project's specified compaction requirements per AS 1289.</p></details><details><summary>How much does a field density test cost in Brisbane?</summary><p>Typical rates range between AU$140 and AU$240 per test point, depending on site access, number of tests, and reporting format. Bulk discounts apply for projects requiring 20+ tests.</p></details><details><summary>Can the sand cone test be used on gravelly fills?</summary><p>Yes, but the maximum particle size must not exceed 50 mm. Larger aggregates require a larger test hole or alternative methods such as the rubber balloon or nuclear gauge.</p></details><details><summary>How long does it take to get results?</summary><p>Field readings are completed within 20 minutes per test. Full laboratory moisture content and dry density calculations are typically reported within 24 hours of sample collection.</p></details><details><summary>What standards govern field density testing in Queensland?</summary><p>The primary standard is AS 1289.5.3.1. Transport and Main Roads (TMR) also mandates supplementary procedures under Q142 for state-funded road projects in Brisbane.</p></details></section>
+<section class="section"><h2>Quick answers</h2><details><summary>What is the sand cone method used for in Brisbane?</summary><p>It measures the in-situ dry density and moisture content of compacted soil, verifying that earthworks meet the project's specified compaction requirements per AS 1289.</p></details><details><summary>How much does a field density test cost in Brisbane?</summary><p>Typical rates range between AU$140 and AU$240 per test point, depending on site access, number of tests, and reporting format. Bulk discounts apply for projects requiring 20+ tests.</p></details><details><summary>Can the sand cone test be used on gravelly fills?</summary><p>Yes, but the maximum particle size must not exceed 50 mm. Larger aggregates require a larger test hole or alternative methods such as the rubber balloon or nuclear gauge.</p></details><details><summary>How long does it take to get results?</summary><p>Field readings are completed within 20 minutes per test. Full <a href="/laboratory/">laboratory</a> moisture content and dry density calculations are typically reported within 24 hours of sample collection.</p></details><details><summary>What standards govern field density testing in Queensland?</summary><p>The primary standard is AS 1289.5.3.1. Transport and Main Roads (TMR) also mandates supplementary procedures under Q142 for state-funded road projects in Brisbane.</p></details></section>
 
 
 

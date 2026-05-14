@@ -113,6 +113,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -132,7 +168,7 @@ header.hero, .hero { position: relative !important; }
     <a class="hero-cta" href="#main-content">DISCOVER →</a>
 </div></header>
 
-<section id="main-content" class="section"><p>Brisbane’s dynamic urban growth demands geotechnical insight that balances innovation with reliability. Our firm delivers comprehensive site characterization, foundation design, subsurface investigation, and construction monitoring tailored to the region’s unique conditions. We integrate consolidated regional experience with calibrated equipment and code-compliant reports to support projects from high-rise towers in the CBD to suburban developments on the outskirts. Whether assessing bearing capacity, groundwater behavior, or seismic resilience, our team ensures that every recommendation is grounded in local context and technical rigor. From initial feasibility studies through to final compliance documentation, we provide the clarity and confidence needed to navigate Brisbane’s subsurface challenges.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="img/calicatas-exploratorias-1.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Exploratory test pit in Brisbane" style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure></section>
+<section id="main-content" class="section"><p>Brisbane’s dynamic urban growth demands geotechnical insight that balances innovation with reliability. Our firm delivers comprehensive site characterization, foundation design, subsurface investigation, and construction monitoring tailored to the region’s unique conditions. We integrate consolidated regional experience with calibrated equipment and code-compliant reports to support projects from high-rise towers in the CBD to suburban developments on the outskirts. Whether assessing bearing capacity, groundwater behavior, or <a href="/seismic/">seismic</a> resilience, our team ensures that every recommendation is grounded in local context and technical rigor. From initial feasibility studies through to final compliance documentation, we provide the clarity and confidence needed to navigate Brisbane’s subsurface challenges.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="img/calicatas-exploratorias-1.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Exploratory test pit in Brisbane" style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure></section>
 
 
     <section class="section img-inline-block" style="padding:1.5rem 2.5rem">

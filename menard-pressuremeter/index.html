@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -196,7 +232,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="section"><h2>Quick answers</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>How does the Ménard pressuremeter test differ from the standard penetration test (SPT)?</summary><p>The SPT measures dynamic resistance via blow counts (N-value), which is a qualitative index. The PMT directly measures in-situ stress-strain behavior under controlled radial loading, yielding quantitative parameters like limit pressure (pL) and Ménard modulus (EM). In Brisbane's alluvial sands, PMT provides a direct measurement of stiffness for <a href="../settlement-analysis/" data-interlink="1">settlement analysis</a>, while SPT offers a rough correlation to relative density.</p></details><details><summary>What are the typical applications of PMT in Brisbane's geology?</summary><p>PMT is used for designing deep foundations (piles and caissons) in the Neranleigh-Fernvale meta-sediments, where the modulus varies significantly with weathering. It is also critical for assessing lateral stress in excavations for basements in the Brisbane CBD, and for estimating settlement of bridges and infrastructure on the river's alluvial terraces.</p></details><details><summary>What is the typical cost range for a Ménard pressuremeter test in Brisbane?</summary><p>The cost for a standard pre-bored PMT in Brisbane typically ranges between AU$1.570 and AU$2.040 per test depth, depending on site access, depth, and the number of tests per borehole. Volume discounts apply for multidepth testing on large infrastructure projects.</p></details><details><summary>How should PMT results be interpreted for design in Brisbane's variable soil profiles?</summary><p>PMT results are used to derive the Ménard modulus (EM) and limit pressure (pL), which feed directly into settlement calculations using the Ménard method. For Brisbane's alluvial profiles, the EM/pL ratio helps classify soil type and stiffness. For deep foundations, pL is correlated to end-bearing capacity using established empirical relationships (e.g., Bustamante & Gianeselli).</p></details></section>
+<details><summary>How does the Ménard pressuremeter test differ from the standard penetration test (SPT)?</summary><p>The SPT measures dynamic resistance via blow counts (N-value), which is a qualitative index. The PMT directly measures in-situ stress-strain behavior under controlled radial loading, yielding quantitative parameters like limit pressure (pL) and Ménard modulus (EM). In Brisbane's alluvial sands, PMT provides a direct measurement of stiffness for <a href="../settlement-analysis/" data-interlink="1">settlement analysis</a>, while SPT offers a rough correlation to relative density.</p></details><details><summary>What are the typical applications of PMT in Brisbane's geology?</summary><p>PMT is used for designing deep <a href="/foundations/">foundations</a> (piles and caissons) in the Neranleigh-Fernvale meta-sediments, where the modulus varies significantly with weathering. It is also critical for assessing lateral stress in excavations for basements in the Brisbane CBD, and for estimating settlement of bridges and infrastructure on the river's alluvial terraces.</p></details><details><summary>What is the typical cost range for a Ménard pressuremeter test in Brisbane?</summary><p>The cost for a standard pre-bored PMT in Brisbane typically ranges between AU$1.570 and AU$2.040 per test depth, depending on site access, depth, and the number of tests per borehole. Volume discounts apply for multidepth testing on large infrastructure projects.</p></details><details><summary>How should PMT results be interpreted for design in Brisbane's variable soil profiles?</summary><p>PMT results are used to derive the Ménard modulus (EM) and limit pressure (pL), which feed directly into settlement calculations using the Ménard method. For Brisbane's alluvial profiles, the EM/pL ratio helps classify soil type and stiffness. For deep foundations, pL is correlated to end-bearing capacity using established empirical relationships (e.g., Bustamante & Gianeselli).</p></details></section>
 
 
 

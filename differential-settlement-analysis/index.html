@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -187,7 +223,7 @@ header.hero, .hero { position: relative !important; }
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 
         <div class="sub-svc-grid-8142-8142">
-          <div class="sub-svc"><div class="sub-svc-num" style="color:#EA580C;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#171717;font-size:1.1rem;margin:.3rem 0 .5rem">Consolidation Testing & Parameter Derivation</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Oedometer tests on undisturbed samples to determine Cc, Cr, cv, and pre-consolidation pressure. We follow AS 1289.6.6.1 and report settlement magnitude versus time curves specific to Brisbane clay profiles.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#EA580C;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#171717;font-size:1.1rem;margin:.3rem 0 .5rem">Finite Element Settlement Modelling</h3><p style="color:#333;line-height:1.65;font-size:.93rem">2D and 3D numerical analysis using Plaxis 2D and MIDAS GTS NX. We simulate staged construction, pore pressure dissipation, and differential movement under pad, strip, or raft foundations.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#EA580C;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#171717;font-size:1.1rem;margin:.3rem 0 .5rem">Field Verification with Plate Load Tests</h3><p style="color:#333;line-height:1.65;font-size:.93rem">In-situ <a href="../plate-load/" data-interlink="1">plate load tests</a> (PLT) per AS 1726 to measure immediate settlement modulus. Results feed directly into the settlement model to calibrate design assumptions against actual ground response.</p></div>
+          <div class="sub-svc"><div class="sub-svc-num" style="color:#EA580C;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#171717;font-size:1.1rem;margin:.3rem 0 .5rem">Consolidation Testing & Parameter Derivation</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Oedometer tests on undisturbed samples to determine Cc, Cr, cv, and pre-consolidation pressure. We follow AS 1289.6.6.1 and report settlement magnitude versus time curves specific to Brisbane clay profiles.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#EA580C;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#171717;font-size:1.1rem;margin:.3rem 0 .5rem">Finite Element Settlement Modelling</h3><p style="color:#333;line-height:1.65;font-size:.93rem">2D and 3D numerical analysis using Plaxis 2D and MIDAS GTS NX. We simulate staged construction, pore pressure dissipation, and differential movement under pad, strip, or raft <a href="/foundations/">foundations</a>.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#EA580C;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#171717;font-size:1.1rem;margin:.3rem 0 .5rem">Field Verification with Plate Load Tests</h3><p style="color:#333;line-height:1.65;font-size:.93rem">In-situ <a href="../plate-load/" data-interlink="1">plate load tests</a> (PLT) per AS 1726 to measure immediate settlement modulus. Results feed directly into the settlement model to calibrate design assumptions against actual ground response.</p></div>
         </div>
       </div>
     </section>
